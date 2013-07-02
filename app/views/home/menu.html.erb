@@ -1,0 +1,54 @@
+<h1>MTA 2.0 -> Faster, Better, Sleeker</h1>
+
+<p>Origin?</p>
+
+<form action='/choice' method='get'>
+  <select name='start'>
+    <option value="n:ts">N-Times Square</option>
+    <option value="n:34th">N-34th</option>
+    <option value="n:28th-n">N-28th</option>
+    <option value="n:23rd-n">N-23rd</option>
+    <option value="n:us">N-Union Square</option>
+    <option value="n:8th">N-8th</option>
+    <option value="l:8th">L-8th</option>
+    <option value="l:6th">L-6th</option>
+    <option value="l:us">L-Union Station</option>
+    <option value="l:3rd">L-3rd</option>
+    <option value="l:1st">L-1st</option>
+    <option value="s:gc">S-Grand Central</option>
+    <option value="s:33rd">S-33rd</option>
+    <option value="s:28th-s">S-28th</option>
+    <option value="s:23rd-s">S-23rd</option>
+    <option value="s:us">S-Union Station</option>
+    <option value="s:ap">S-Astor Place</option>
+    </select>
+
+
+<p>Destination?</p>
+
+
+  <select name='stop'>
+    <option value="n:ts">N-Times Square</option>
+    <option value="n:34th">N-34th</option>
+    <option value="n:28th-n">N-28th</option>
+    <option value="n:23rd-n">N-23rd</option>
+    <option value="n:us">N-Union Square</option>
+    <option value="n:8th">N-8th</option>
+    <option value="l:8th">L-8th</option>
+    <option value="l:6th">L-6th</option>
+    <option value="l:us">L-Union Station</option>
+    <option value="l:3rd">L-3rd</option>
+    <option value="l:1st">L-1st</option>
+    <option value="s:gc">S-Grand Central</option>
+    <option value="s:33rd">S-33rd</option>
+    <option value="s:28th-s">S-28th</option>
+    <option value="s:23rd-s">S-23rd</option>
+    <option value="s:us">S-Union Station</option>
+    <option value="s:ap">S-Astor Place</option>
+    </select>
+<br>
+<br>
+<button>Go!</button>
+</form>
+
+<p> Your journey will have <%= @total_length_of_trip %> stop(s).</p>
