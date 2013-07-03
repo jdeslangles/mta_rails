@@ -1,9 +1,10 @@
-<h1>MTA 2.0 -> Faster, Better, Sleeker</h1>
+<h1>MTA 2.0 ==> <em>Faster, Better, Sleeker</em></h1>
 
 <p>Origin?</p>
 
 <form action='/choice' method='get'>
-  <select name='start'>
+
+  <select name='beginning'>
     <option value="n:ts">N-Times Square</option>
     <option value="n:34th">N-34th</option>
     <option value="n:28th-n">N-28th</option>
@@ -21,13 +22,18 @@
     <option value="s:23rd-s">S-23rd</option>
     <option value="s:us">S-Union Station</option>
     <option value="s:ap">S-Astor Place</option>
-    </select>
+  <!--   <option value="sv:ts">Sv-Times Square</option>
+    <option value="sv:42nd">Sv-42nd</option>
+    <option value="sv:5th">Sv-5th</option>
+    <option value="sv:gc">Sv-Grand Central</option>
+    <option value="sv:vj">Sv-Vernon-Jackson</option> -->
+  </select>
 
 
 <p>Destination?</p>
 
 
-  <select name='stop'>
+  <select name='end'>
     <option value="n:ts">N-Times Square</option>
     <option value="n:34th">N-34th</option>
     <option value="n:28th-n">N-28th</option>
@@ -45,10 +51,16 @@
     <option value="s:23rd-s">S-23rd</option>
     <option value="s:us">S-Union Station</option>
     <option value="s:ap">S-Astor Place</option>
-    </select>
+<!--     <option value="sv:ts">Sv-Times Square</option>
+    <option value="sv:42nd">Sv-42nd</option>
+    <option value="sv:5th">Sv-5th</option>
+    <option value="sv:gc">Sv-Grand Central</option>
+    <option value="sv:vj">Sv-Vernon-Jackson</option> -->
+  </select>
+
 <br>
 <br>
 <button>Go!</button>
 </form>
 
-<p> Your journey will have <%= @total_length_of_trip %> stop(s).</p>
+<p> ==> Your journey will have <%= @total_length_of_trip %> stop(s).</p>
